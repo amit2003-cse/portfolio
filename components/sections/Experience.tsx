@@ -12,7 +12,7 @@ export default function Experience() {
       company: "Freelance Developer",
       desc: "Built and delivered client projects including Mom’s Handmade (MERN e-commerce with Razorpay integration) and a Security Agency website with service inquiry workflow. Focused on scalable architecture, performance optimization, and production deployment.",
       date: "Jun 2025 – Present",
-      link: "#",
+      link: "https://amit-next-portfolio.vercel.app/",
     },
     {
       company: "EICT Academy, IIT Kanpur",
