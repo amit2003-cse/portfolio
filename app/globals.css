@@ -1,0 +1,15 @@
+@import "tailwindcss";
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #111111; /* Dark Background */
+  color: #ffffff;
+  font-family: 'Inter', sans-serif; /* Clean sans-serif font */
+}
+
+/* Hide scrollbar for clean look */
+.overflow-y-scroll::-webkit-scrollbar {
+  display: none;
+}
