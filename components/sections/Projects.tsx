@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ExternalLink } from "lucide-react"; // Screenshot se match karne ke liye ExternalLink use kiya hai
+import { ExternalLink } from "lucide-react";
 
 export default function Projects() {
   const projects = [
@@ -24,17 +24,17 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="min-h-screen bg-[#151515] px-8 md:px-16 py-24">
+    <section id="projects" className="min-h-screen bg-[#151515] px-6 md:px-16 py-20 md:py-24">
 
       {/* HEADING */}
-      <h2 className="text-[70px] md:text-[90px] font-black leading-[0.95] tracking-tighter uppercase mb-16">
+      {/* Mobile pe text-[50px] aur desktop pe text-[90px] taaki overflow na ho */}
+      <h2 className="text-[50px] sm:text-[70px] md:text-[90px] font-black leading-[0.95] tracking-tighter uppercase mb-12 md:mb-16">
         <span className="text-white">RECENT</span> <br />
         <span className="text-[#2a2a2a]">PROJECTS</span>
       </h2>
 
       {/* LIST */}
-      {/* Max-width set ki hai taaki cards bahut zyada stretch na hon badi screens par */}
-      <div className="space-y-6 max-w-4xl">
+      <div className="space-y-5 md:space-y-6 max-w-4xl">
         
         {projects.map((p, i) => (
           <a
@@ -42,18 +42,20 @@ export default function Projects() {
             href={p.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative flex items-center gap-6 md:gap-8 bg-[#1c1c1c] rounded-[28px] p-6 md:p-8 hover:bg-[#242424] transition duration-300"
+            // Mobile par flex-col ya flex-row adjust karne ke liye items-start, sm pe items-center
+            className="group relative flex flex-col sm:flex-row items-start sm:items-center gap-4 md:gap-8 bg-[#1c1c1c] rounded-[24px] md:rounded-[28px] p-5 sm:p-6 md:p-8 hover:bg-[#242424] transition duration-300"
           >
 
             {/* TOP RIGHT ICON */}
-            {/* Absolute positioning se icon hamesha top-right corner mein rahega */}
+            {/* Mobile pe top-5 right-5, aur md pe top-6 right-6 */}
             <ExternalLink 
               size={22} 
-              className="absolute top-6 right-6 text-[#ff6b00] opacity-80 group-hover:opacity-100 transition duration-300" 
+              className="absolute top-5 right-5 md:top-6 md:right-6 text-[#ff6b00] opacity-80 group-hover:opacity-100 group-hover:scale-110 transition duration-300" 
             />
 
             {/* IMAGE */}
-            <div className="w-[100px] h-[100px] md:w-[120px] md:h-[120px] shrink-0 rounded-[20px] overflow-hidden bg-neutral-800">
+            {/* Mobile pe choti image (80px), desktop pe badi (120px) */}
+            <div className="w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] shrink-0 rounded-[16px] md:rounded-[20px] overflow-hidden bg-neutral-800">
               <Image
                 src={p.img}
                 alt={p.title}
@@ -64,12 +66,12 @@ export default function Projects() {
             </div>
 
             {/* TEXT */}
-            {/* pr-12 diya hai taaki lamba text top-right icon ke upar overlap na kare */}
-            <div className="pr-12">
-              <h3 className="text-[22px] md:text-[26px] font-bold text-white tracking-wide">
+            {/* sm screens par pr-12 taaki icon ke niche text na aaye */}
+            <div className="sm:pr-12 mt-1 sm:mt-0">
+              <h3 className="text-[20px] md:text-[26px] font-bold text-white tracking-wide pr-8 sm:pr-0 leading-tight">
                 {p.title}
               </h3>
-              <p className="text-[#8a8a8a] text-[15px] md:text-[17px] mt-2 leading-relaxed">
+              <p className="text-[#8a8a8a] text-[14px] md:text-[17px] mt-2 leading-relaxed">
                 {p.desc}
               </p>
             </div>

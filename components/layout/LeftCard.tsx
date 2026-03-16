@@ -3,73 +3,45 @@ import { Linkedin, Github, FileText, Instagram } from "lucide-react";
 
 export default function LeftCard() {
   return (
-    <div className="w-[360px] h-[640px] flex flex-col bg-white rounded-[32px] shadow-xl p-8 text-center">
-      
-      {/* IMAGE CONTAINER */}
-      {/* Agar aapki profile pic transparent hai, toh yeh orange background dikhega, 
-          warna aap direct image use kar sakte hain */}
-      <div className="w-full h-[320px] rounded-[24px] overflow-hidden bg-[#c5711f] mb-8 relative shrink-0">
-        <Image
-          src="/profile.jpeg"
-          alt="Amit Kumar"
+    <div className="bg-white rounded-[32px] shadow-2xl p-7 md:p-10 text-center w-full">
+
+      {/* IMAGE */}
+      {/* w-full aur aspect-square se ye image mobile par perfect size legi */}
+      <div className="mx-auto w-full aspect-square max-w-[280px] rounded-[24px] overflow-hidden bg-[#c5711f] mb-6 md:mb-8 relative">
+        <Image 
+          src="/profile.jpeg" 
+          alt="Amit Kumar" 
           fill
-          className="object-cover"
+          className="object-cover" 
         />
       </div>
 
       {/* NAME */}
-      <h2 className="text-[32px] font-extrabold text-black tracking-tight mb-2">
+      <h2 className="text-[28px] md:text-[32px] font-bold text-black mb-3">
         Amit Kumar
       </h2>
 
-      {/* LOWER SECTION (Bio & Socials pushed to bottom) */}
-      <div className="flex-grow flex flex-col justify-end">
-        
-        {/* BIO */}
-        <p className="text-[#4a5568] text-[15px] font-medium leading-relaxed px-2">
-        Passionate about designing scalable systems and solving real-world problems through code.
-        </p>
+      {/* BIO */}
+      <p className="text-[#6b6b6b] text-[15px] md:text-[16px] leading-relaxed max-w-[280px] mx-auto font-medium">
+        A Software Engineer who has developed countless innovative solutions.
+      </p>
 
-        {/* SOCIAL ICONS */}
-        <div className="flex justify-center gap-7 mt-10 mb-2 text-[#ff6b00]">
-          <a
-            href="https://www.linkedin.com/in/amit-cse/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:scale-110 transition duration-300"
-          >
-            <Linkedin size={24} fill="currentColor" strokeWidth={0} />
-          </a>
-
-          <a
-            href="https://github.com/amit2003-cse"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:scale-110 transition duration-300"
-          >
-            <Github size={24} fill="currentColor" strokeWidth={0} />
-          </a>
-
-          <a
-            href="https://drive.google.com/file/d/13Aq02VYwZ1U_qhPHv6ZONdcgcfzXkqv1/view"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:scale-110 transition duration-300"
-          >
-            <FileText size={24} fill="currentColor" strokeWidth={0} />
-          </a>
-
-          <a
-            href="https://www.instagram.com/amit_inpublic"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:scale-110 transition duration-300"
-          >
-            <Instagram size={24} strokeWidth={2.5} />
-          </a>
-        </div>
+      {/* SOCIAL */}
+      <div className="flex justify-center gap-6 mt-8 mb-2 text-[#ff6b00]">
+        <a href="https://www.linkedin.com/in/amit-cse/" target="_blank" rel="noreferrer" className="hover:scale-110 transition-transform">
+          <Linkedin size={22} fill="currentColor" strokeWidth={0} />
+        </a>
+        <a href="https://github.com/amit2003-cse" target="_blank" rel="noreferrer" className="hover:scale-110 transition-transform">
+          <Github size={22} fill="currentColor" strokeWidth={0} />
+        </a>
+        <a href="https://drive.google.com/file/d/13Aq02VYwZ1U_qhPHv6ZONdcgcfzXkqv1/view" target="_blank" rel="noreferrer" className="hover:scale-110 transition-transform">
+          <FileText size={22} fill="currentColor" strokeWidth={0} />
+        </a>
+        <a href="https://www.instagram.com/amit_inpublic" target="_blank" rel="noreferrer" className="hover:scale-110 transition-transform">
+          <Instagram size={24} strokeWidth={2.5} />
+        </a>
       </div>
-      
+
     </div>
   );
 }

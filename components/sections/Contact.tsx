@@ -1,75 +1,117 @@
 "use client";
 
+import toast from "react-hot-toast";
+
 export default function Contact() {
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+  
+    const formData = new FormData(e.currentTarget);
+  
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      regarding: formData.get("regarding"),
+      message: formData.get("message"),
+    };
+  
+    const toastId = toast.loading("Sending message...");
+  
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+  
+      const result = await res.json();
+  
+      if (!res.ok || !result.success) {
+        throw new Error("Failed request");
+      }
+  
+      toast.success("Message sent successfully 🚀", { id: toastId });
+  
+      e.currentTarget.reset();
+  
+    } catch (error) {
+      
+    }
+  }
+
   return (
-    <section id="contact" className="min-h-screen bg-[#151515] px-8 md:px-16 py-24 flex flex-col justify-center">
+    <section
+      id="contact"
+      className="min-h-screen bg-[#151515] px-6 md:px-16 py-20 md:py-24 flex flex-col justify-center"
+    >
 
       {/* HEADING */}
-      <h2 className="text-[70px] md:text-[90px] font-black leading-[0.95] tracking-tighter uppercase mb-16">
+      <h2 className="text-[50px] sm:text-[70px] md:text-[90px] font-black leading-[0.95] tracking-tighter uppercase mb-12 md:mb-16">
         <span className="text-white">LET'S WORK</span> <br />
         <span className="text-[#2a2a2a]">TOGETHER</span>
       </h2>
 
       {/* FORM */}
-      <form className="max-w-3xl space-y-7">
+      <form
+        onSubmit={handleSubmit}
+        className="max-w-3xl space-y-6 w-full"
+      >
 
-        {/* ROW: NAME & EMAIL */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
+        {/* NAME + EMAIL */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-          {/* NAME */}
-          <div className="flex flex-col">
-            <label className="text-[15px] font-medium text-white mb-2.5">Name</label>
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="w-full bg-[#242424] text-white placeholder-[#6b6b6b] px-5 py-4 rounded-[12px] border border-transparent focus:border-[#ff6b00] outline-none transition-all duration-300"
-            />
-          </div>
+          <input
+            name="name"
+            type="text"
+            placeholder="Your Name"
+            required
+            className="w-full bg-[#242424] text-white px-4 py-4 rounded-[12px] outline-none border border-transparent focus:border-[#ff6b00]"
+          />
 
-          {/* EMAIL */}
-          <div className="flex flex-col">
-            <label className="text-[15px] font-medium text-white mb-2.5">Email</label>
-            <input
-              type="email"
-              placeholder="Your@email.com"
-              className="w-full bg-[#242424] text-white placeholder-[#6b6b6b] px-5 py-4 rounded-[12px] border border-transparent focus:border-[#ff6b00] outline-none transition-all duration-300"
-            />
-          </div>
+          <input
+            name="email"
+            type="email"
+            placeholder="Your@email.com"
+            required
+            className="w-full bg-[#242424] text-white px-4 py-4 rounded-[12px] outline-none border border-transparent focus:border-[#ff6b00]"
+          />
 
         </div>
 
         {/* DROPDOWN */}
-        <div className="flex flex-col">
-          <label className="text-[15px] font-medium text-white mb-2.5">Regarding</label>
-          <select className="w-full bg-[#242424] text-[#6b6b6b] px-5 py-4 rounded-[12px] border border-transparent focus:border-[#ff6b00] outline-none transition-all duration-300 appearance-none cursor-pointer">
-            <option>Select...</option>
-            <option>General Inquiry</option>
-            <option>Project Collaboration</option>
-            <option>Freelance Opportunity</option>
-            <option>Job Offer</option>
-          </select>
-        </div>
+        <select
+          name="regarding"
+          required
+          className="w-full bg-[#242424] text-white px-4 py-4 rounded-[12px] outline-none border border-transparent focus:border-[#ff6b00]"
+        >
+          <option value="">Select...</option>
+          <option>General Inquiry</option>
+          <option>Project Collaboration</option>
+          <option>Freelance Opportunity</option>
+          <option>Job Offer</option>
+        </select>
 
         {/* MESSAGE */}
-        <div className="flex flex-col">
-          <label className="text-[15px] font-medium text-white mb-2.5">Message</label>
-          <textarea
-            placeholder="Message"
-            rows={5}
-            className="w-full bg-[#242424] text-white placeholder-[#6b6b6b] px-5 py-4 rounded-[12px] border border-transparent focus:border-[#ff6b00] outline-none transition-all duration-300 resize-none"
-          />
-        </div>
+        <textarea
+          name="message"
+          rows={5}
+          placeholder="Message"
+          required
+          className="w-full bg-[#242424] text-white px-4 py-4 rounded-[12px] outline-none border border-transparent focus:border-[#ff6b00]"
+        />
 
         {/* BUTTON */}
         <button
           type="submit"
-          className="w-full bg-[#ff6b00] hover:bg-[#e66000] text-white font-bold text-[16px] py-4 rounded-[12px] transition-colors duration-300 mt-2"
+          className="w-full bg-[#ff6b00] hover:bg-[#e66000] text-white font-bold py-4 rounded-[12px]"
         >
           Submit
         </button>
 
       </form>
-
     </section>
   );
 }

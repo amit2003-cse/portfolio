@@ -23,16 +23,16 @@ export default function Experience() {
   ];
 
   return (
-    <section id="experience" className="min-h-screen bg-[#151515] px-8 md:px-16 py-24">
+    <section id="experience" className="min-h-screen bg-[#151515] px-6 md:px-16 py-20 md:py-24">
 
       {/* HEADING */}
-      <h2 className="text-[70px] md:text-[90px] font-black leading-[0.95] tracking-tighter uppercase mb-20">
+      <h2 className="text-[50px] sm:text-[70px] md:text-[90px] font-black leading-[0.95] tracking-tighter uppercase mb-12 md:mb-20">
         <span className="text-white">1+ YEARS OF</span> <br />
         <span className="text-[#2a2a2a]">EXPERIENCE</span>
       </h2>
 
       {/* LIST */}
-      <div className="space-y-16 max-w-4xl">
+      <div className="space-y-12 md:space-y-16 max-w-4xl">
 
         {exp.map((e, i) => (
           <a
@@ -44,27 +44,28 @@ export default function Experience() {
           >
             
             {/* COMPANY & ICON */}
-            <div className="flex items-start justify-between mb-3">
-              <h3 className="text-[26px] md:text-[30px] font-bold text-white tracking-wide group-hover:text-gray-200 transition-colors">
+            <div className="flex items-start justify-between mb-2 md:mb-3">
+              {/* pr-4 taaki text icon se na takraye */}
+              <h3 className="text-[22px] sm:text-[26px] md:text-[30px] font-bold text-white tracking-wide group-hover:text-gray-200 transition-colors pr-4">
                 {e.company}
               </h3>
               
               {/* Sirf tabhi icon dikhega jab link '#' na ho */}
               {e.link !== "#" && (
                 <ExternalLink 
-                  size={24} 
-                  className="text-[#ff6b00] opacity-80 group-hover:opacity-100 group-hover:-translate-y-1 group-hover:translate-x-1 transition-all duration-300 ml-4 shrink-0 mt-1" 
+                  size={22} 
+                  className="text-[#ff6b00] opacity-80 group-hover:opacity-100 group-hover:-translate-y-1 group-hover:translate-x-1 transition-all duration-300 ml-2 shrink-0 mt-1 md:w-[24px] md:h-[24px]" 
                 />
               )}
             </div>
 
             {/* DESC */}
-            <p className="text-[#8a8a8a] text-[16px] md:text-[18px] leading-relaxed max-w-3xl">
+            <p className="text-[#8a8a8a] text-[15px] md:text-[18px] leading-relaxed max-w-3xl mt-2">
               {e.desc}
             </p>
 
             {/* DATE */}
-            <p className="text-[#555555] text-[13px] font-bold tracking-widest uppercase mt-6">
+            <p className="text-[#555555] text-[12px] md:text-[13px] font-bold tracking-widest uppercase mt-4 md:mt-6">
               {e.date}
             </p>
 
