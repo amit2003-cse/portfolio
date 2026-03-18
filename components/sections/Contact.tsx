@@ -1,6 +1,7 @@
 "use client";
 
 import toast from "react-hot-toast";
+import { motion } from "framer-motion";
 
 export default function Contact() {
 
@@ -45,19 +46,29 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="min-h-screen bg-[#151515] px-6 md:px-16 py-20 md:py-24 flex flex-col justify-center"
+      className="min-h-screen bg-transparent px-6 md:px-16 py-20 md:py-24 flex flex-col justify-center relative"
     >
 
       {/* HEADING */}
-      <h2 className="text-[50px] sm:text-[70px] md:text-[90px] font-black leading-[0.95] tracking-tighter uppercase mb-12 md:mb-16">
+      <motion.h2 
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="text-[50px] sm:text-[70px] md:text-[90px] font-black leading-[0.95] tracking-tighter uppercase mb-12 md:mb-16"
+      >
         <span className="text-white">LET'S WORK</span> <br />
         <span className="text-[#2a2a2a]">TOGETHER</span>
-      </h2>
+      </motion.h2>
 
       {/* FORM */}
-      <form
+      <motion.form
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-50px" }}
+        transition={{ duration: 0.7, delay: 0.2 }}
         onSubmit={handleSubmit}
-        className="max-w-3xl space-y-6 w-full"
+        className="max-w-3xl space-y-6 w-full relative z-10"
       >
 
         {/* NAME + EMAIL */}
@@ -68,7 +79,7 @@ export default function Contact() {
             type="text"
             placeholder="Your Name"
             required
-            className="w-full bg-[#242424] text-white px-4 py-4 rounded-[12px] outline-none border border-transparent focus:border-[#ff6b00]"
+            className="w-full bg-neutral-900/60 backdrop-blur-md text-white px-4 py-4 rounded-[12px] outline-none border border-white/5 focus:border-[#ff6b00] transition-colors"
           />
 
           <input
@@ -76,7 +87,7 @@ export default function Contact() {
             type="email"
             placeholder="Your@email.com"
             required
-            className="w-full bg-[#242424] text-white px-4 py-4 rounded-[12px] outline-none border border-transparent focus:border-[#ff6b00]"
+            className="w-full bg-neutral-900/60 backdrop-blur-md text-white px-4 py-4 rounded-[12px] outline-none border border-white/5 focus:border-[#ff6b00] transition-colors"
           />
 
         </div>
@@ -85,13 +96,13 @@ export default function Contact() {
         <select
           name="regarding"
           required
-          className="w-full bg-[#242424] text-white px-4 py-4 rounded-[12px] outline-none border border-transparent focus:border-[#ff6b00]"
+          className="w-full bg-neutral-900/60 backdrop-blur-md text-white px-4 py-4 rounded-[12px] outline-none border border-white/5 focus:border-[#ff6b00] transition-colors appearance-none"
         >
-          <option value="">Select...</option>
-          <option>General Inquiry</option>
-          <option>Project Collaboration</option>
-          <option>Freelance Opportunity</option>
-          <option>Job Offer</option>
+          <option value="" className="bg-neutral-900">Select...</option>
+          <option className="bg-neutral-900">General Inquiry</option>
+          <option className="bg-neutral-900">Project Collaboration</option>
+          <option className="bg-neutral-900">Freelance Opportunity</option>
+          <option className="bg-neutral-900">Job Offer</option>
         </select>
 
         {/* MESSAGE */}
@@ -100,18 +111,18 @@ export default function Contact() {
           rows={5}
           placeholder="Message"
           required
-          className="w-full bg-[#242424] text-white px-4 py-4 rounded-[12px] outline-none border border-transparent focus:border-[#ff6b00]"
+          className="w-full bg-neutral-900/60 backdrop-blur-md text-white px-4 py-4 rounded-[12px] outline-none border border-white/5 focus:border-[#ff6b00] transition-colors resize-none"
         />
 
         {/* BUTTON */}
         <button
           type="submit"
-          className="w-full bg-[#ff6b00] hover:bg-[#e66000] text-white font-bold py-4 rounded-[12px]"
+          className="w-full bg-[#ff6b00] hover:bg-white hover:text-black hover:scale-[1.02] transition-all duration-300 transform text-white font-bold py-4 rounded-[12px]"
         >
           Submit
         </button>
 
-      </form>
+      </motion.form>
     </section>
   );
 }
