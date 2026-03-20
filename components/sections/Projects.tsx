@@ -17,6 +17,19 @@ export default function Projects() {
       desc: "A full-stack MERN e-commerce app for homemade snacks.",
       img: "/p2.png",
       link: "https://moms-handmade.netlify.app/",
+    }
+    ,
+    {
+      title: "Revise Flow",
+      desc: "ReviseFlow is built on the modern psychological principle of Guilt-Free Spaced Repetition",
+      img: "/p5.png",
+      link: "https://revise-flow.vercel.app/",
+    },
+    {
+      title: "Power Printer",
+      desc: "A full-stack MERN e-commerce app for Printer Products.",
+      img: "/p4.png",
+      link: "https://powerprint.netlify.app/",
     },
     {
       title: "FinAssessPro",
