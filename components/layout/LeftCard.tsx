@@ -43,7 +43,7 @@ export default function LeftCard() {
         <a href="https://github.com/amit2003-cse" target="_blank" rel="noreferrer" className="hover:scale-125 hover:text-white transition-all duration-300">
           <Github size={22} fill="currentColor" strokeWidth={0} />
         </a>
-        <a href="https://drive.google.com/file/d/13Aq02VYwZ1U_qhPHv6ZONdcgcfzXkqv1/view" target="_blank" rel="noreferrer" className="hover:scale-125 hover:text-white transition-all duration-300">
+        <a href="https://drive.google.com/file/d/1Fp9b3-MxidrrpjMgfneMNe8l6NgkcYei/view?usp=drivesdk" target="_blank" rel="noreferrer" className="hover:scale-125 hover:text-white transition-all duration-300">
           <FileText size={22} fill="currentColor" strokeWidth={0} />
         </a>
         <a href="https://www.instagram.com/amit_inpublic" target="_blank" rel="noreferrer" className="hover:scale-125 hover:text-white transition-all duration-300">
