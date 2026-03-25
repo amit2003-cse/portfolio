@@ -4,16 +4,20 @@ A sleek, dark-themed, and highly responsive personal portfolio website built to 
 
 ## 🌟 Features
 - **Dark Minimalist UI**: Premium, modern design with carefully crafted typography and spacing.
-- **Projects Showcase**: Highlights my recent full-stack and AI work, including *Panda AI*, *Mom's Handmade*, and *FinAssessPro*.
-- **Tech Arsenal**: A dedicated, clean grid layout displaying my technical skills (MERN stack, Next.js, etc.).
-- **Experience Section**: Clean and readable timeline of my professional journey and freelance work.
-- **Floating Quick Navigation**: A sticky, pill-shaped dark navigation bar for smooth scrolling across sections.
-- **Contact Form**: A sleek, interactive UI for getting in touch.
+- **Technical Blog**: Integrated engineering blog with deep dives into JavaScript internals (Hoisting, Event Loop).
+- **SEO Optimized**: Fully semantic HTML, dynamic sitemaps, robots.txt, and JSON-LD schema for high Google ranking.
+- **Analytics & Tracking**: Real-time user engagement tracking via Google Analytics 4 (GA4).
+- **Search Console Ready**: Verified domain integration and optimized for indexing.
+- **Projects Showcase**: Highlights recent full-stack and AI work like *Panda AI*, *Mom's Handmade*, and *FinAssessPro*.
+- **Floating Quick Navigation**: A sticky, pill-shaped dark navigation bar for smooth scrolling.
 
 ## 🛠️ Tech Stack Built With
-- **Framework**: [Next.js](https://nextjs.org/) (React)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Framework**: [Next.js 15+](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS 4.0](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
 - **Icons**: [Lucide React](https://lucide.dev/)
+- **Analytics**: Google Tag Manager (GTM/GA4)
+
 
 ## 💻 Running Locally
 
