@@ -36,7 +36,7 @@ export default function LeftCard() {
       </p>
 
       {/* SOCIAL */}
-      <div className="flex justify-center gap-6 mt-8 mb-2 text-[#ff6b00] relative z-10">
+      <div className="flex justify-center gap-6 mt-8 mb-6 text-[#ff6b00] relative z-10">
         <a href="https://www.linkedin.com/in/amit-cse/" target="_blank" rel="noreferrer" className="hover:scale-125 hover:text-white transition-all duration-300">
           <Linkedin size={22} fill="currentColor" strokeWidth={0} />
         </a>
@@ -48,6 +48,16 @@ export default function LeftCard() {
         </a>
         <a href="https://www.instagram.com/amit_inpublic" target="_blank" rel="noreferrer" className="hover:scale-125 hover:text-white transition-all duration-300">
           <Instagram size={24} strokeWidth={2.5} />
+        </a>
+      </div>
+
+      {/* BLOG LINK */}
+      <div className="relative z-10 mt-4">
+        <a 
+          href="/blog" 
+          className="inline-flex items-center justify-center w-full py-3 px-6 rounded-full bg-[#1c1c1c] text-white font-medium border border-white/10 hover:border-[#ff6b00] hover:text-[#ff6b00] transition-colors duration-300 shadow-lg"
+        >
+          Read my Blog
         </a>
       </div>
 
