@@ -7,6 +7,12 @@ import { motion } from "framer-motion";
 export default function Projects() {
   const projects = [
     {
+      title: "🏭 Smart Manufacturing System",
+      desc: "Professional enterprise dashboard for barcode tracking, automated QC workflows, and real-time shipping label consolidation.",
+      img: "/p6.png",
+      link: "https://smart-manufacturing-system.netlify.app/",
+    },
+    {
       title: "🐼 Panda AI (RAG-based)",
       desc: "privacy-first local RAG teaching assistant.",
       img: "/p1.png",

@@ -63,7 +63,7 @@ export default function Hero() {
           className="flex flex-wrap gap-10 md:gap-16 mt-12 md:mt-16"
         >
           <Counter number={1} label="YEARS OF EXPERIENCE" />
-          <Counter number={4} label="PROJECTS COMPLETED" />
+          <Counter number={5} label="PROJECTS COMPLETED" />
           <Counter number={2} label="AWARDS RECEIVED" />
         </motion.div>
 
