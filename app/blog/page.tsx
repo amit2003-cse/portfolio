@@ -9,6 +9,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    title: "Building a Serverless RAG AI Chatbot with Gemini & Groq",
+    description: "How I built an ultra-fast, intelligent portfolio assistant with Next.js, Gemini Embeddings, and Groq's Llama 3.",
+    date: "April 27, 2026",
+    slug: "ai-chatbot",
+    readTime: "8 min read",
+  },
+  {
     title: "Understanding Hoisting in JavaScript",
     description: "A deep dive into how JavaScript moves declarations to the top of their scope.",
     date: "March 25, 2026",
@@ -36,7 +43,7 @@ export default function BlogListing() {
       <div className="max-w-4xl">
         <h1 className="text-[50px] sm:text-[70px] md:text-[90px] font-black leading-[0.95] tracking-tighter uppercase mb-6">
           <span className="text-white">TECH</span> <br />
-          <span className="text-[#2a2a2a]">INSIGHTS</span>
+          <span className="text-neutral-500">INSIGHTS</span>
         </h1>
         
         <p className="text-neutral-400 text-lg mb-16 max-w-2xl leading-relaxed">

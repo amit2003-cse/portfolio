@@ -58,7 +58,7 @@ export default function Contact() {
         className="text-[50px] sm:text-[70px] md:text-[90px] font-black leading-[0.95] tracking-tighter uppercase mb-12 md:mb-16"
       >
         <span className="text-white">LET'S WORK</span> <br />
-        <span className="text-[#2a2a2a]">TOGETHER</span>
+        <span className="text-neutral-500">TOGETHER</span>
       </motion.h2>
 
       {/* FORM */}

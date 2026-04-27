@@ -1,91 +1,101 @@
-# <p align="center">✨ Amit Kumar | Personal Portfolio ✨</p>
+<div align="center">
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Next.js-15%2B-black?style=for-the-badge&logo=next.js" alt="Next.js" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-4.0-38B2AC?style=for-the-badge&logo=tailwind-css" alt="Tailwind CSS" />
-  <img src="https://img.shields.io/badge/Framer_Motion-Modern-ff69b4?style=for-the-badge&logo=framer" alt="Framer Motion" />
-  <img src="https://img.shields.io/badge/Status-Live-success?style=for-the-badge" alt="Status" />
-</p>
+# 🚀 Next-Gen AI Portfolio
 
----
-## Live Link : https://amit-next-portfolio.vercel.app/
-## 🚀 Overview
+**A premium, high-performance developer portfolio built with Next.js, featuring a built-in Serverless RAG AI Assistant.**
 
-A high-performance, **premium personal portfolio** engineered for visibility and impact. Built on the bleeding edge of web technology, this site serves as a digital headquarters to showcase deep technical expertise, full-stack projects, and engineering insights.
+[![Next.js](https://img.shields.io/badge/Next.js-14+-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react)](https://react.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-black?style=for-the-badge&logo=framer)](https://www.framer.com/motion/)
+[![Groq](https://img.shields.io/badge/Groq_Llama_3-F55036?style=for-the-badge&logo=groq&logoColor=white)](https://groq.com/)
 
-> [!NOTE]
-> This isn't just a portfolio; it's a statement of quality, performance, and modern design principles.
+[View Live Demo](#) · [Report Bug](#) · [Request Feature](#)
+
+</div>
 
 ---
 
-## 🔥 Key Features
+## ✨ Features
 
-- 💎 **Bespoke UI/UX**: A dark-themed, glassmorphism-inspired interface with fluid micro-animations powered by **Framer Motion**.
-- ✍️ **Engineering Blog**: A technical journal focusing on architectural patterns and JavaScript internals (Hoisting, Event Loop, etc.).
-- 🛠️ **Full-Stack Excellence**: Dedicated showcases for projects like *Panda AI*, *Mom's Handmade*, and *FinAssessPro*.
-- 📈 **SEO & Performance Mastery**: 
-    - Dynamic sitemaps (`sitemap.ts`) and Robots (`robots.ts`).
-    - JSON-LD Schema for rich search snippets.
-    - Optimized for core web vitals and sub-second load times.
-- 🎯 **Advanced Tracking**: Real-time engagement signals via **Google Analytics 4** and **GTM**.
+- **🤖 Serverless RAG AI Chatbot:** An integrated AI assistant powered by **Groq (Llama 3.3)** and **Gemini Embeddings**. It acts as a 24/7 technical recruiter, instantly answering questions about my experience, skills, and projects using real-time Web Streams.
+- **⚡ Blazing Fast Performance:** Built on Next.js App Router for optimal Server-Side Rendering (SSR) and Static Site Generation (SSG).
+- **🎨 Premium Dark UI:** A stunning, modern glassmorphism design with a dark theme, neon accents, and smooth scrolling.
+- **🎬 Cinematic Animations:** Fluid, physics-based micro-interactions and page transitions powered by **Framer Motion**.
+- **📝 Technical Blog:** A built-in Markdown/React-based blog section ("Tech Insights") to share deep technical dives.
+- **📧 Contact Integration:** Fully functional serverless contact form.
 
 ---
 
-## 🛠️ Technical Arsenal
+## 🛠️ Tech Stack & Architecture
 
-| Layer | Technologies |
-| :--- | :--- |
-| **Frontend** | Next.js (App Router), React 19, TypeScript |
-| **Styling** | Tailwind CSS 4.0, Lucide Icons |
-| **Animation** | Framer Motion, Lenis (Smooth Scroll) |
-| **Backend/Services** | Resend (Email Infrastructure), Vercel |
-| **Analytics** | GA4, Google Tag Manager |
+### **Frontend**
+*   **Framework:** [Next.js](https://nextjs.org/) (React)
+*   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+*   **Animations:** [Framer Motion](https://www.framer.com/motion/)
+*   **Icons:** [Lucide React](https://lucide.dev/)
+*   **Smooth Scrolling:** [Lenis](https://lenis.studiofreight.com/)
 
----
-
-## 💻 Local Blueprint
-
-Ready to explore the codebase locally? Follow these steps:
-
-1. **Clone & Enter**
-   ```bash
-   git clone https://github.com/amit2003-cse/portfolio.git
-   cd portfolio
-   ```
-
-2. **Synchronize Dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Ignite Development Server**
-   ```bash
-   npm run dev
-   ```
-
-4. **Explore**
-   Launch [http://localhost:3000](http://localhost:3000) to see the magic.
+### **AI & Backend (API Routes)**
+*   **LLM Provider:** [Groq](https://groq.com/) (Llama-3.3-70b-versatile for ultra-low latency token generation)
+*   **Embeddings:** Google Gemini (`text-embedding-004`)
+*   **Vector Search:** In-memory highly optimized Cosine Similarity Search.
 
 ---
 
-## 📬 Professional Connection
+## 🚀 Getting Started
 
-Let's collaborate or discuss innovative solutions!
+To run this portfolio locally, follow these steps:
 
-<p align="left">
-  <a href="https://www.linkedin.com/in/amit-cse/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn" />
-  </a>
-  <a href="https://github.com/amit2003-cse" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-Follow-333?style=for-the-badge&logo=github" alt="GitHub" />
-  </a>
-  <a href="https://www.instagram.com/amit_inpublic" target="_blank">
-    <img src="https://img.shields.io/badge/Instagram-Follow-E4405F?style=for-the-badge&logo=instagram" alt="Instagram" />
-  </a>
-  <a href="https://drive.google.com/file/d/1Fp9b3-MxidrrpjMgfneMNe8l6NgkcYei/view?usp=drivesdk" target="_blank">
-    <img src="https://img.shields.io/badge/Resume-Download-ff6b00?style=for-the-badge&logo=read-the-docs" alt="Resume" />
-  </a>
-</p>
+### 1. Clone the repository
+```bash
+git clone https://github.com/amit2003-cse/portfolio.git
+cd portfolio
+```
+
+### 2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3. Setup Environment Variables
+Create a `.env.local` file in the root of your project and add your API keys for the AI Chatbot functionality:
+
+```env
+# AI RAG Chatbot Keys
+GEMINI_API_KEY=your_google_gemini_api_key_here
+GROQ_API_KEY=your_groq_api_key_here
+```
+
+### 4. Start the Development Server
+```bash
+npm run dev
+# or
+yarn dev
+```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ---
-<p align="center">Made with ❤️ by Amit Kumar</p>
+
+## 🧠 How the AI RAG System Works
+
+This portfolio doesn't just list projects; it talks about them. 
+
+1. **Knowledge Base:** My resume and project data are pre-processed and converted into high-dimensional vector embeddings using the Google Gemini API.
+2. **User Query:** When a user asks a question in the `/projects/ai-chatbot` interface, their query is also embedded.
+3. **Semantic Search:** A custom Serverless API route calculates the Cosine Similarity between the user's query vector and the knowledge base to retrieve the most relevant context.
+4. **Streaming Generation:** The context is fed into Groq's insanely fast LPU hardware running Llama 3. The response is piped back to the frontend in real-time using `ReadableStream` and Server-Sent Events (SSE).
+
+---
+
+## 🤝 Let's Connect
+
+- **LinkedIn:** [linkedin.com/in/amit-cse](https://www.linkedin.com/in/amit-cse/)
+- **GitHub:** [@amit2003-cse](https://github.com/amit2003-cse)
+
+---
+<div align="center">
+  <p>Built with ❤️ by Amit Kumar. Committed to life-long learning.</p>
+</div>

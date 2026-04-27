@@ -23,7 +23,7 @@ export default function QuickNav() {
         {links.map((link, i) => (
           <a
             key={i}
-            href={`#${link.id}`}
+            href={`/#${link.id}`}
             // Default state thodi light, aur hover par pure white + orange + slight pop animation
             className="text-white opacity-80 hover:opacity-100 hover:text-[#ff6b00] transition-all duration-300 hover:-translate-y-1"
           >

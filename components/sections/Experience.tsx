@@ -37,7 +37,7 @@ export default function Experience() {
         className="text-[50px] sm:text-[70px] md:text-[90px] font-black leading-[0.95] tracking-tighter uppercase mb-12 md:mb-20"
       >
         <span className="text-white">1+ YEARS OF</span> <br />
-        <span className="text-[#2a2a2a]">EXPERIENCE</span>
+        <span className="text-neutral-500">EXPERIENCE</span>
       </motion.h2>
 
       {/* LIST */}

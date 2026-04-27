@@ -37,15 +37,15 @@ export default function Hero() {
       >
 
         {/* HEADING */}
-        <h1 className="text-[54px] sm:text-[70px] md:text-[90px] leading-[0.95] font-black uppercase tracking-tighter">
+        <h1 className="text-[44px] sm:text-[70px] md:text-[90px] leading-[0.9] font-black uppercase tracking-tighter">
           <motion.div variants={itemVariants} className="overflow-hidden">
              FULL
           </motion.div>
           <motion.div variants={itemVariants} className="overflow-hidden relative">
-            <span className="relative z-10">STACK</span>
+            <span className="relative z-10">STACK &</span>
           </motion.div>
           <motion.div variants={itemVariants} className="overflow-hidden">
-            <span className="text-neutral-500">DEVELOPER</span>
+            <span className="text-neutral-500">AI ENGINEER</span>
           </motion.div>
         </h1>
 
@@ -54,7 +54,7 @@ export default function Hero() {
           variants={itemVariants}
           className="text-neutral-400 text-[16px] md:text-[18px] font-medium mt-6 md:mt-8 max-w-xl leading-relaxed"
         >
-          Committed to the philosophy of life-long learning. Passionate about architecting ideas into products that are robust, intuitive, and scalable.
+          Committed to the philosophy of life-long learning. Passionate about architecting AI-driven solutions and full-stack products that are robust, intuitive, and scalable.
         </motion.p>
 
         {/* COUNTERS */}
