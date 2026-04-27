@@ -10,7 +10,7 @@ export default function Projects() {
       title: "🏭 Smart Manufacturing System",
       desc: "Professional enterprise dashboard for barcode tracking, automated QC workflows, and real-time shipping label consolidation.",
       img: "/p6.png",
-      link: "https://smart-manufacturing-system.netlify.app/",
+      link: "https://smart-manufacturing-system.vercel.app/",
     },
     {
       title: "🐼 Panda AI (RAG-based)",
