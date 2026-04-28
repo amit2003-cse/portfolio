@@ -30,8 +30,8 @@ export default function ChatMessage({
     );
     if (formatted.includes("<li")) {
       formatted = formatted.replace(
-        /(<li.*?<\/li>)/gs,
-        '<ul class="list-disc space-y-1 my-2">$1</ul>'
+        /(?:<li[^>]*>[\s\S]*?<\/li>\s*)+/g,
+        '<ul class="list-disc space-y-1 my-2">$&</ul>'
       );
     }
     // Line breaks
