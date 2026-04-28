@@ -103,10 +103,10 @@ export default function FullScreenChat() {
   }
 
   return (
-    <div className="w-full h-screen flex flex-col pt-44 sm:pt-24 pb-6 px-4 sm:px-8 lg:px-16 overflow-hidden">
+    <div className="w-full h-screen flex flex-col pt-6 sm:pt-24 pb-6 px-4 sm:px-8 lg:px-16 overflow-hidden">
       
       {/* Header */}
-      <div className="flex items-center justify-between mb-6 sm:mb-8 pb-4 sm:pb-6 border-b border-white/5 shrink-0">
+      <div className="flex items-center justify-between mb-3 sm:mb-8 pb-3 sm:pb-6 border-b border-white/5 shrink-0">
         <div className="flex items-center gap-3 sm:gap-4">
           <Link
             href="/#projects"
@@ -143,7 +143,7 @@ export default function FullScreenChat() {
             <h2 className="text-xl sm:text-3xl font-bold text-white mb-2 sm:mb-4">
               How can I help you?
             </h2>
-            <p className="text-neutral-400 mb-6 sm:mb-8 text-sm sm:text-lg px-4">
+            <p className="text-neutral-400 mb-6 sm:mb-8 text-xs sm:text-lg px-4 leading-relaxed">
               I am an intelligent RAG assistant built to answer questions about Amit's professional background, skills, and portfolio projects.
             </p>
 
@@ -160,9 +160,9 @@ export default function FullScreenChat() {
               ))}
             </div>
             
-            <div className="mt-8 flex items-center gap-2 text-sm text-neutral-500 bg-black/20 py-2 px-4 rounded-full border border-white/[0.02]">
-              <AlertCircle size={14} />
-              Responses are generated using Groq API and Gemini Embeddings.
+            <div className="mt-6 flex items-center gap-2 text-[10px] sm:text-sm text-neutral-500 bg-white/[0.02] py-2 px-4 rounded-full border border-white/[0.05]">
+              <AlertCircle size={12} className="shrink-0" />
+              <span>Responses are generated using Groq API and Gemini Embeddings.</span>
             </div>
           </motion.div>
         )}

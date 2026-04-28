@@ -54,7 +54,7 @@ export default function RootLayout({
               className: "bg-[#1c1c1c] text-white border border-[#333] shadow-none"
             }}
           />
-          <QuickNav />
+          {!isChatPage && <QuickNav />}
 
           <main className="flex flex-col lg:flex-row w-full max-w-[100vw] min-h-screen">
             {!isChatPage && (
